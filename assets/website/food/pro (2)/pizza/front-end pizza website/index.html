@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pizza Shop</title>
+   <link rel="shortcut icon"  type="x-icon" href="images/home-img-1.png">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo">Pizza Shop</a>
+
+
+      <nav class="navbar">
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="#menu">menu</a>
+         <a href="#order">order</a>
+         <a href="#faq">information</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="order-btn" class="fas fa-box"></div>
+         <div id="cart-btn" class="fas fa-shopping-cart"></div>
+      </div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>close</span></div>
+
+      <div class="user">
+         <p><span>you are not logged in now!</span></p>
+      </div>
+
+      <div class="flex">
+
+         <form action="" method="post">
+            <h3>login now</h3>
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="submit" value="login now" name="login" class="btn">
+         </form>
+
+         <form action="" method="post">
+            <h3>register now</h3>
+            <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="password" name="cpass" required class="box" placeholder="confirm your password" maxlength="20">
+            <input type="submit" value="register now" name="register" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+</div>
+
+<div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>close</span></div>
+
+      <h3 class="title"> my orders </h3>
+
+      <div class="box">
+         <p>You haven't requested anything yet</p>
+      </div>
+
+   </section>
+
+</div>
+
+<div class="shopping-cart">
+
+   <section>
+      <div id="close-cart"><span>close</span></div>
+      <a href="#order" class="btn">order now</a>
+   </section>
+
+</div>
+
+<div class="home-bg">
+
+   <section class="home" id="home">
+
+      <div class="slide-container">
+
+         <div class="slide active">
+            <div class="image">
+               <img src="images/home-img-1.png" alt="">
+            </div>
+            <div class="content">
+               <h3>homemade Pepperoni Pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/home-img-2.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Pizza With Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Mascarpone And Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/Jalapeno pizza.webp" alt="">
+            </div>
+            <div class="content">
+               <h3>Halapeno pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/pizza-on-transparent-background-free-png.webp" alt="">
+            </div>
+            <div class="content">
+               <h3>2 IN 1</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">about us</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/2f2e87c5a8253bd7b53533e5838e89d0.jpg" alt="">
+         <h3>made with love</h3>
+         <p>We take care of the ingredients to make the pizza with love and knead the dough with comfort</p>
+         <a href="#faq" class="btn">information</a>
+      </div>
+
+      <div class="box">
+         <img src="images/istockphoto-1200224470-612x612.jpg" alt="">
+         <h3>15 minutes delivery</h3>
+         <p>Hot pizza is much tastier, so we speed up your orders, and our delivery is free with the chef’s recommendations</p>
+         <a href="#faq" class="btn">information</a>
+      </div>
+
+      <div class="box">
+         <img src="images/5-dl.beatsnoop.com-600px-1662090502-removebg-preview-1.png-removebg-preview.webp" alt="">
+         <h3>Halal</h3>
+         <p>Our food, meats and drinks are suitable for Muslims and we support them at all times and respect all religions</p>
+         <a href="#faq" class="btn">information</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section id="menu" class="menu">
+
+   <h1 class="heading">menu</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>40,000</span>Highest rated</div>
+         <img src="images/Jalapeno pizza.webp">
+         <div class="name">Halapeno pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" href="#order">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>45,000</span>Highest rated</div>
+         <img src="images/pizza-on-transparent-background-free-png.webp">
+         <div class="name">2 IN 1</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" href="#order">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>38,000</span>Highest rated</div>
+         <img src="images/home-img-3.png">
+         <div class="name">Cheese pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" href="#order">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>30,000</span></div>
+         <img src="images/pizza-1.jpg">
+         <div class="name">Cheese pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" href="#order">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>40,000</span></div>
+         <img src="images/pizza-2.jpg" alt="">
+         <div class="name">Classic pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>28,500</span></div>
+         <img src="images/pizza-3.jpg" alt="">
+         <div class="name">Tomato pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>35,000</span></div>
+         <img src="images/pizza-4.jpg" alt="">
+         <div class="name">Vegetable pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>32,000</span></div>
+         <img src="images/home-img-2.png" alt="">
+         <div class="name">Mushroom pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>40,000</span></div>
+         <img src="images/pizza-6.jpg" alt="">
+         <div class="name">Hawaiian pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>45,000</span></div>
+         <img src="images/pizza-7.jpg" alt="">
+         <div class="name">Mozzarella pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>30,000</span></div>
+         <img src="images/f3.png" alt="">
+         <div class="name">Olive pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">Syrian Pound<span>38,000</span></div>
+         <img src="images/home-img-1.png" alt="">
+         <div class="name">Pepperoni pizza</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="15" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <h1 class="heading">order now</h1>
+
+   <form action="" method="post">
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>your name :</span>
+            <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
+         </div>
+         <div class="inputBox">
+            <span>your number :</span>
+            <input type="number" name="number" class="box" required placeholder="enter your number" min="0">
+         </div>
+         <div class="inputBox">
+            <span>payment method</span>
+            <select name="method" class="box">
+               <option value="cash on delivery">cash on delivery</option>
+               <option value="credit card">credit card</option>
+               <option value="paytm">paytm</option>
+               <option value="paypal">paypal</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>address line 01 :</span>
+            <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>address line 02 :</span>
+            <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>pin code :</span>
+            <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+         </div>
+      </div>
+
+      <input type="submit" value="order now" class="btn" name="order">
+
+   </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h1 class="heading">Information</h1>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <span>Is there a money back guarantee?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Of course, you will not need this option unless you live on another planet, At that time you can get your money back.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>how long does it take for delivery?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Our delivery is fast compared to your five-star support on social media, Follow us on Instagram.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>can I order for huge parties?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            We are ready to serve our customers 24 hours a day as long as there is money, But express service is available to everyone.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>how much protein it contains?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            It may contain enough calories to last you a whole day, ranging between 300 and 400 calories per slice.
+         </p>
+      </div>
+
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>is it cooked with oil?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            We may use a little healthy oil licensed by the Ministry of Health because your health is important to us.
+         </p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>phone number</h3>
+         <p>+963 000 000 000</p>
+         <p>+963 000 000 000</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>address</h3>
+         <p>SY, Damascus, New Damascus, Mashruuca Doumer</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>Everyday</p>
+         <p>08:30am to 02:00am</p>
+         
+      </div>
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>email address</h3>
+         <p>xxx@gmail.com</p>
+         <p>xxx@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      copyright by <span><a class="ae" href="https://wa.me/+963954035434">DAVO 2023 &copy;</a></span> all rights reserved
+   </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
